@@ -1,0 +1,115 @@
+@charset="UTF-8";
+
+@font-face {
+	font-family: 'FontePrincipal'; 
+	src: url("fonts/JosefinSlab-Regular.ttf");
+}
+
+body{
+	font-family: 'FontePrincipal', sans-serif;
+	margin: 0 auto;
+}
+
+header#cabecalho{
+	background-color: #3a539b;
+	height: 100px;
+	margin: 0 auto;
+	min-height: 25px;
+	padding-top: 1%;
+    width: 60%;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+#nav {
+	text-align:center;
+	padding-top: 3%;
+}
+
+#nav li {
+	display:inline;
+	background-color: #a8b6bf;
+	padding: 1%; /*espaço dentro do objeto*/
+	margin: 0%; /*espaço fora do objeto*/
+	transition: background-color 1s;
+	text-align:center;
+}
+
+#nav li:hover{
+	background-color: #f6f1ed;
+}
+
+#nav a {
+	color: #f6f1ed;
+	text-decoration:none; 
+	padding:0 30px; /* variable width */
+}
+
+#nav a:hover {
+	color: #000000;
+	/*text-decoration: underline;*/
+}
+
+div#info{
+	/*box-shadow: 10px 5px 2px rgba(0, 0, 0, .5);*/
+    min-height: 90vh;
+	background-color: #67809f;
+	margin: 0 auto;
+    width: 60%;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+	font-size: 120%;
+}
+
+img.perfil {
+    display: block;
+    margin: 0 auto;
+	padding: 20px;
+}	
+
+img.mergulho{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+
+img.redes-sociais{
+    width: 5%;
+    height: 5%;;
+}
+
+div#links{
+	text-align:center;
+}
+
+h1{
+	text-align:center;
+    padding-bottom: 50px;
+}
+
+.center{
+	text-align:center;
+}
+
+.dados{
+	width: 300px;
+}
+
+textarea {
+    height: 150px;
+	width: 500px;
+    padding: 7px;
+    border: 2px solid #808080;
+    color: #1e202b;
+    margin: 6px;
+    line-height: 20px;
+}
+
+li{
+	padding: 10px;
+}
