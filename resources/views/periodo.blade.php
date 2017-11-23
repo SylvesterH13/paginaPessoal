@@ -1,35 +1,24 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.main_layout')
 
-<head>
-	<meta charset='UTF-8'>
-	<title>Sylvester Henrique</title>
-	<link rel="stylesheet" type="text/css" href="/css/estilo.css">
-</head>
-
-<body>
-	<header id='cabecalho'>
-	<ul id="nav">
-		<li><a href='/'>Home</a></li>
-		<li><a href='/curriculo'>Currículo</a></li>
-		<li><a href='/contato'>Contato</a></li>
-		<li><a href='/hobbies'>Hobbies</a></li>
-	</ul>
-	</header>
+@section('conteudo')
 
 	<div id='info'>
-		<h1>Currículo</h1>
-	
-		<ul style='list-style-type: square' class='standardList'>
-			<?php
 
+		@component('titulo')
+
+			Currículo
+
+		@endcomponent
+	
+		<a href='/curriculo'>Voltar</a>
+		<ul style='list-style-type: square' class='standardList'>
+			@php
 				foreach($periodo as $p){
 					echo '<li>'.$p.'</li>';
 				}
 
-			?>
+			@endphp
 		</ul>
 	</div>
-</body>
 
-</html>
+@endsection

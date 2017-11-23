@@ -1,35 +1,15 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.main_layout')
 
-<head>
-	<meta charset='UTF-8'>
-	<title>Sylvester Henrique</title>
-	<link rel="stylesheet" type="text/css" href="/css/estilo.css">
-    <script type="text/javascript" src="/js/script.js"> </script>
-    <script type="text/javascript" src="jquery.mask.min.js"> </script>
-    <script type="text/javascript" src="jquery-3.2.0.min.js"> </script>
-</head>
+@section('conteudo')
 
-<script type='text/javascript'>
+	<div id='info' class='center'>
+		
+		@component('titulo')
 
-$(document).ready(function () {
-    $('#telefone').mask('(99)99999-9999');
-});
+			Contato
 
-</script>
+		@endcomponent
 
-<body>
-	<header id='cabecalho'>
-	<ul id="nav">
-		<li><a href='/'>Home</a></li>
-		<li><a href='/curriculo'>Currículo</a></li>
-		<li><a href='/contato'>Contato</a></li>
-		<li><a href='/hobbies'>Hobbies</a></li>
-	</ul>
-	</header>
-
-	<div id="info" class="center" >
-		<h1>Contato</h1>
 		<form name="contatoForm" action="contatoemail.php" method="post" style="color:white;">
 			<p>
 				<input type="text" class='dados' id="nome" name="nome" placeholder="Nome" required="required" onkeyup="apenasLetras(this)"/>
@@ -48,6 +28,5 @@ $(document).ready(function () {
 			</p>
 		</form>
 	</div>
-</body>
 
-</html>
+@endsection
