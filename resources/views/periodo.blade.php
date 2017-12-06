@@ -13,8 +13,8 @@
 		<a href='/curriculo'>Voltar</a>
 		<ul style='list-style-type: square' class='standardList'>
 			@php
-				foreach($periodo as $p){
-					echo '<li>'.$p.'</li>';
+				foreach($disciplinas as $d){
+					echo '<li>'.$d["nome"].'</li>';
 				}
 
 			@endphp
